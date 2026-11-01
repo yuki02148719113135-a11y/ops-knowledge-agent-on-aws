@@ -1,0 +1,12 @@
+# cp terraform.tfvars.example terraform.tfvars で使う（terraform.tfvars は Git に入らない）
+
+region  = "us-east-1"
+project = "ops-agent"
+
+# DB 初期化スクリプトを実行する Python。
+# 仮想環境（.venv）を有効化してから terraform apply すれば変更不要。
+# 有効化しない場合は infra/ から見た相対パスで指定する
+# python_bin = "../.venv/bin/python"
+
+# 自動一時停止をやめて常時起動にしたい場合（課金が続くので注意）
+# aurora_min_acu = 0.5

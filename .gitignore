@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+infra/.build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / secrets
+.DS_Store
+.env
+.env.*
